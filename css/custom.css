@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "Chi_font_1";
+  src: url("中文點陣圖字型/MBitmapSquareHK-Light-Roman.woff2") format("woff2"),
+    url("中文點陣圖字型/MBitmapSquareHK-Light-Roman.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Chi_font_1";
+  color: red;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Chi_font_1";
+  font-weight: bold;
+  color: white;
+}
+
+/* 將NAVBAR 預設的padding取消,用以將BAR變色沒有空白 
+    預設為:
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+*/
+.navbar {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+/* id是#,class 是. */
+#navButton_1 {
+  background-color: aqua;
+}
+
+#navButton_2 {
+  background-color: red;
+}
+
+#navButton_3 {
+    background-color: Green;
+  }
+
+.logo {
+  width: 181px;
+  position: absolute;
+  top: -19px;
+}
+
+/* width:100%即是拿闊邊100%, height:100vh即是拿圖顯示高100% */
+/* 本來用<section class='slide' id='slide1'></section>, (.slide{})但用FULLPAGE.JS必須要將SLIDE寫成section */
+.section {
+  width: 100%;
+  height: 100vh;
+  /* 重要!!!如不加position: relative - lower的所有按鍵不能出現在3張SLIDE, 因為他會變ABSOLUTE在Slide1 */
+  position: relative;
+}
+/* 首頁大圖Standard 落法 */
+#slide1 {
+  background-image: url("../images/Heroslide_photo_1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#slide2 {
+  background-image: url("../images/龍傲天的男主角竟然甘心做一個無名士兵!你在玩我吧【心理學ACG談】.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#slide3 {
+  background-image: url("../images/雷姆原來是心理學家!｜究竟她用甚麼方法拯救昂\ 【心理學ACG談】.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.upper {
+  color: white;
+  font-weight: bold;
+  padding-top: 100px;
+}
+/* 下面的左Button */
+.lower .lowerButton1 {
+  background: #171a20;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-size: 12px;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+/* 下面的右Button */
+.lower .lowerButton2 {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  padding: 10px 40px;
+  border-radius: 30px;
+  font-size: 12px;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+/* arrowDown本為inline(參考lowerButton1,2顯示在旁, 因為是a tag, 而a tag不能加margin,因此要將display改為inline-block才可用margin 
+    加了後可用margin將箭咀往下移一些
+*/
+.lower .arrowDown {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* 將2個button加箭嘴向下置中 */
+.lower {
+  position: absolute;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* 只有當畫面闊度大小 小於990PX時應用- FOR RWD */
+@media only screen and (max-width: 990px) {
+  .logo {
+    width: 200px;
+    position: absolute;
+    top: -12px;
+    left: auto;
+    right: -15px;
+  }
+  .navbar {
+    background: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-family: "Chi_font_1";
+    font-weight: bold;
+    color: black;
+  }
+  /* 只將手機版NAV BAR BUTTON變回白色 */
+  #navButton_1,
+  #navButton_2 {
+    background-color: white;
+  }
+  /* 只將手機版NAV BAR background變白色 */
+  .bg-warning {
+    background-color: #ffffff !important;
+  }
+  /* 將手機版的圖縮小 */
+  /* .slide {
+    height: 200px;
+  }
+  #slide1 {
+    margin-top: 100px;
+  }
+} */
