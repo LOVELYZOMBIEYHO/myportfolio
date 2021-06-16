@@ -35,6 +35,14 @@ p {
 }
 
 /* id是#,class 是. */
+/* 加高條NAVBAR */
+#navButton_1,#navButton_2,#navButton_3{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+
 #navButton_1 {
   background-color: aqua;
 }
@@ -48,9 +56,9 @@ p {
   }
 
 .logo {
-  width: 181px;
+  width: 155px;
   position: absolute;
-  top: -19px;
+  top: -7px;
 }
 
 /* width:100%即是拿闊邊100%, height:100vh即是拿圖顯示高100% */
@@ -135,9 +143,9 @@ p {
 /* 只有當畫面闊度大小 小於990PX時應用- FOR RWD */
 @media only screen and (max-width: 990px) {
   .logo {
-    width: 200px;
+    width: 155px;
     position: absolute;
-    top: -12px;
+    top: -3px;
     left: auto;
     right: -15px;
   }
@@ -153,7 +161,8 @@ p {
   }
   /* 只將手機版NAV BAR BUTTON變回白色 */
   #navButton_1,
-  #navButton_2 {
+  #navButton_2,
+  #navButton_3 {
     background-color: white;
   }
   /* 只將手機版NAV BAR background變白色 */
