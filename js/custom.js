@@ -4,7 +4,10 @@
 new fullpage('#fullpage', {
 	//options here
 	autoScrolling:true,
-	scrollHorizontally: true
+	scrollHorizontally: true,
+	anchors: ['section1', 'section2', 'section3']
 });
+
+
 
 
