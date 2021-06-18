@@ -29,12 +29,17 @@ p {
 }
 
 
-/* right為裝住相的block, firstPhoto是相 */
+/* right為裝住相的block, firstPhoto是相  absolute的寫法中間文字不會走位,但需要調幾次RWD*/
 .right {
   position: absolute;
   right: 200px;
   top: 100px;
 }
+/* .right {
+  position: relative;
+  right: -800px;
+  top: 0px;
+} */
 /* right為裝住相的block, firstPhoto是相 */
 .firstPhoto{
   width: : 500px;
@@ -158,8 +163,24 @@ p {
   right: 0;
   text-align: center;
 }
-將Nav Bar 打直時 Social media icon 向橫 .sm-icons {
+/* 將Nav Bar 打直時 Social media icon 向橫  */
+.sm-icons {
   flex-direction: row;
+}
+
+@media only screen and (max-width: 1542px) {
+  /* 將圖片可用IPAD */
+  .right {
+    position: absolute;
+    right: 200px;
+    top: 180px;
+  }
+  .firstPhoto{
+    width: : 500px;
+    height: 300px;
+    border-radius: 100%;
+  
+  }
 }
 
 /* 只有當畫面闊度大小 小於990PX時應用- FOR RWD */
@@ -200,9 +221,11 @@ p {
 
    /* right為裝住相的block, firstPhoto是相 */
    .right {
-    position: absolute;
-    right: 110px;
-    top: 150px;
+    position: relative;
+    text-align: center;
+    left: 0px;
+    top: 0px;
+    
   }
   /* right為裝住相的block, firstPhoto是相 */
   .firstPhoto{
