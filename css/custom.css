@@ -28,7 +28,6 @@ p {
   position: relative;
 }
 
-
 /* right為裝住相的block, firstPhoto是相  absolute的寫法中間文字不會走位,但需要調幾次RWD*/
 .right {
   position: absolute;
@@ -41,11 +40,9 @@ p {
   top: 0px;
 } */
 /* right為裝住相的block, firstPhoto是相 */
-.firstPhoto{
-  width: : 500px;
+.firstPhoto {
   height: 500px;
   border-radius: 100%;
-
 }
 
 /* 將NAVBAR 預設的padding取消,用以將BAR變色沒有空白 
@@ -175,11 +172,9 @@ p {
     right: 200px;
     top: 180px;
   }
-  .firstPhoto{
-    width: : 500px;
+  .firstPhoto {
     height: 300px;
     border-radius: 100%;
-  
   }
 }
 
@@ -219,24 +214,19 @@ p {
     padding-right: 1em;
   }
 
-   /* right為裝住相的block, firstPhoto是相 */
-   .right {
+  /* right為裝住相的block, firstPhoto是相 */
+  .right {
     position: relative;
     text-align: center;
     left: 0px;
     top: 0px;
-    
   }
   /* right為裝住相的block, firstPhoto是相 */
-  .firstPhoto{
-    width: : 500px;
+  .firstPhoto {
     height: 150px;
     border-radius: 100%;
-
   }
 }
-
- 
 
 /* 只將手機版NAV BAR background變白色 */
 /* .bg-warning {

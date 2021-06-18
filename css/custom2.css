@@ -1,0 +1,80 @@
+/* @font-face {
+  font-family: "AOTF1";
+  src: url("../fontType/A-OTF字型/ShinGoPr6N-Ultra-AlphaNum.woff2")
+      format("woff2"),
+    url("../fontType/A-OTF字型/ShinGoPr6N-Ultra-AlphaNum.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AOTF2";
+  src: url("../fontType/A-OTF字型/UDShinMGoPr6-Bold-AlphaNum.woff2")
+      format("woff2"),
+    url("../fontType/A-OTF字型/UDShinMGoPr6-Bold-AlphaNum.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: "otf1";
+  src: url("ShinGoPr6N-Ultra-AlphaNum.woff2") format("woff2"),
+    url("ShinGoPr6N-Ultra-AlphaNum.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "otf2";
+  src: url("UDShinMGoPr6-Bold-AlphaNum.woff2") format("woff2"),
+    url("UDShinMGoPr6-Bold-AlphaNum.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+body {
+  background-color: wheat;
+  background-image: url("../images/pexels-photo-245250.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  /* Over CSS1的字型 */
+  font-family: "Times New Roman", Times, serif;
+}
+
+#myIntro {
+  margin-top: 300px;
+
+  text-align: center;
+  background-color: rgba(206, 155, 155, 0.8);
+}
+
+.myResumeSubHead h1 {
+  font-size: 200px;
+  font-family: fantasy;
+  color: gray;
+}
+
+/* 因沒了FULLPAGE,所以要再LOAD過CSS 執位 */
+@media only screen and (max-width: 990px) {
+  .logo {
+    width: 155px;
+    position: absolute;
+    top: -3px;
+    left: auto;
+    /* 2個版本ICON位置, PENDING */
+    /* right: 32px; */
+    right: 225px;
+  }
+  #navbarNav {
+    text-align: left;
+  }
+}
