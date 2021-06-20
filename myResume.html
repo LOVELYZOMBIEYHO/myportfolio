@@ -4,39 +4,24 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Fullpage.js 捲動動畫 -->
-    <script src='js/fullpage.js'></script>
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
- 
-    <LInk href='css/hoverEffect.css' rel='stylesheet'> </LInk>
-    <LInk href='css/custom.css' rel='stylesheet'> </LInk>
+    <LInk href='css/NavBar.css' rel='stylesheet'> </LInk>
+
+    <LInk href='css/hoverEffect2.css' rel='stylesheet'> </LInk>
     <LInk href='css/custom2.css' rel='stylesheet'> </LInk>
+    
     <link rel="shortcut icon" href="./images/FAVICON.png"/>
     <link rel="bookmark" href="./images/FAVICON.png"/>
     <title>myPortfolio-Hoson_Yim</title>
   </head>
-  <body>
-<!-- Bootstrap 的瀏覽條   fixed-top 是後加的,以FIX NAV BAR, 和刪了 bg-light
- <nav class="navbar navbar-expand-lg navbar-light bg-light"> (原本)
--->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
         <div class="container-fluid">
-          <!-- 
-            如需用文字代替LOGO才用,因現在不需要  
-            <a class="navbar-brand" href="#">Hoson的Portfolio</a> 
-
-            id='navButton_1', 2... 是自己加的
-            -->
-            
-        <!-- 加LOGO 代替網頁標題 -->
-        <!-- <img class='logo' src='images/logo_1.png' > -->
- 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- A tag logo -本來放最上,但會有BUG -->
           <a id="header-logo" href="./">
             <img class='logo' src='images/logo_1.png' >
           </a> 
@@ -52,8 +37,6 @@
                 <a class="nav-link" id='navButton_3' href="#">聯絡方式</a>
               </li>
             </ul>
-
-            <!-- -----Social Media Icon--------------------------------------------------------- -->
             <ul class="navbar-nav sm-icons">
                 <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/wing-ho-yim-555460150/" target="_blank"><i class="fab fa-linkedin-f"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></i></a></li>
                 <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCOE5vcRxsdsQSBXK-OoqCQw" target="_blank"><i class="fab fa-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z"/></svg></i></a></li>
@@ -61,175 +44,267 @@
             </ul>
           </div>
         </div>
-
       </nav>
+    
 
-      <section class='section' id='myIntro'>
+  
+<!--      <div class="container" >
+          <div class="row">
+              <div class="col-md-12">
+                  <div class='upper text-center'>
+                      <h2><strong>Hoson's Portfolio</strong></h2>
+                      <P>My name is Hoson</P>
+                  </div>     
+              </div>
+          </div>
+     </div> -->
+      <section class="emptyBox">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class='text-center'>
-                        <h1><strong>Hoson's Portfolio</strong></h1>
-                        <P>My name is Hoson, here is my introduction.  </P>
-                        <div class="item clean">
-                            <img src="./images/excelPhoto1.jpg" alt="image">
-                            <div class="overlay">
-                              <span>"</span>
-                              <span>
-                                  <strong>
-                                    <p>Great Excel skill</p>
-                                    <li>Vlookup</li>
-                                    <li>Pivot Table</li>
-                                    <li>Skill of HR analysis</li>
-                                 </strong>
-                              </span>
-                              <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="row">
+            <div class="col-md-12">test colMD12</div>
+          </div>
         </div>
       </section>
-      <div class= "myResumeSubHead"> 
-        <H1>MySkill</H1>
-      </div>
+      
+      <section class="introBox">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class='upper text-center'>
+                <h2><strong>Hoson's Portfolio</strong></h2>
+                <P>My name is Hoson. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, obcaecati voluptatibus facilis magnam, sint maxime nostrum quibusdam voluptate odio vitae corporis earum aspernatur vel hic neque maiores, iusto consequuntur numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa incidunt quisquam, explicabo quasi cupiditate aliquid tenetur dolor rem sunt illum temporibus, odio ea vero necessitatibus mollitia non quidem, animi sint!</P>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </section>
 
+
+      <section class="introBox2">
+        <div class="container">
+      <div class="row my-custom-row justify-content-center align-items-center">
+        <div class="col-sm-12"><div class="p-3 border bg-light">
+          <h2><strong>Hoson's Portfolio</strong></h2>
+                <P>My name is Hoson. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, obcaecati voluptatibus facilis magnam, sint maxime nostrum quibusdam voluptate odio vitae corporis earum aspernatur vel hic neque maiores, iusto consequuntur numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa incidunt quisquam, explicabo quasi cupiditate aliquid tenetur dolor rem sunt illum temporibus, odio ea vero necessitatibus mollitia non quidem, animi sint!</P>
+        </div></div>   
+      </div>
+      </div>
+      </section>
+
+      <!-- Sub Heading1 -->
+      <br>
+      <div>
+        <h2 class="myResumeSubHead">MySkill</h2>
+      </div>
+      <h2 class="myResumeSubHead">MySkill</h2>
+      <br>
+      <br>
+      <br>
+       <!-- My Skill 1 -->
       <section>
         <div class="item clean">
-            <img src="./images/excelPhoto1.jpg" alt="image">
-            <div class="overlay">
-              <span>"</span>
-              <span>
-                  <strong>
-                    <p>Great Excel skill</p>
-                    <li>Vlookup</li>
-                    <li>Pivot Table</li>
-                    <li>Skill of HR analysis</li>
-                 </strong>
-              </span>
-              <span></span>
-            </div>
+          <img src="./images/excelPhoto1.jpg" alt="image">
+          <div class="overlay">
+            <span></span>
+            <span>
+                <strong>
+                  <p>Great Excel skill</p>
+                  <li>Vlookup</li>
+                  <li>Pivot Table</li>
+                  <li>Skill of HR analysis</li>
+               </strong>
+            </span>
+            <span></span>
+          </div>
+      </div>
+      <div class="item clean">
+          <img src="./images/excelPhoto1.jpg" alt="image">
+          <div class="overlay">
+            <span>"</span>
+            <span>
+                <strong>
+                  <p>Great Excel skill</p>
+                  <li>Vlookup</li>
+                  <li>Pivot Table</li>
+                  <li>Skill of HR analysis</li>
+               </strong>
+            </span>
+            <span></span>
+          </div>
+      </div>
+      <div class="item clean">
+          <img src="./images/excelPhoto1.jpg" alt="image">
+          <div class="overlay">
+            <span>"</span>
+            <span>
+                <strong>
+                  <p>Great Excel skill</p>
+                  <li>Vlookup</li>
+                  <li>Pivot Table</li>
+                  <li>Skill of HR analysis</li>
+               </strong>
+            </span>
+            <span></span>
+          </div>
+      </div>
+      <div class="item clean">
+        <img src="./images/excelPhoto1.jpg" alt="image">
+        <div class="overlay">
+          <span>"</span>
+          <span>
+              <strong>
+                <p>Great Excel skill</p>
+                <li>Vlookup</li>
+                <li>Pivot Table</li>
+                <li>Skill of HR analysis</li>
+             </strong>
+          </span>
+          <span></span>
         </div>
+    </div>
+    <div class="item clean">
+      <img src="./images/excelPhoto1.jpg" alt="image">
+      <div class="overlay">
+        <span>"</span>
+        <span>
+            <strong>
+              <p>Great Excel skill</p>
+              <li>Vlookup</li>
+              <li>Pivot Table</li>
+              <li>Skill of HR analysis</li>
+           </strong>
+        </span>
+        <span></span>
+      </div>
+  </div>
+  <div class="item clean">
+    <img src="./images/excelPhoto1.jpg" alt="image">
+    <div class="overlay">
+      <span>"</span>
+      <span>
+          <strong>
+            <p>Great Excel skill</p>
+            <li>Vlookup</li>
+            <li>Pivot Table</li>
+            <li>Skill of HR analysis</li>
+         </strong>
+      </span>
+      <span></span>
+    </div>
+</div>
+<div class="item clean">
+    <img src="./images/excelPhoto1.jpg" alt="image">
+    <div class="overlay">
+      <span>"</span>
+      <span>
+          <strong>
+            <p>Great Excel skill</p>
+            <li>Vlookup</li>
+            <li>Pivot Table</li>
+            <li>Skill of HR analysis</li>
+         </strong>
+      </span>
+      <span></span>
+    </div>
+</div>
+<div class="item clean">
+    <img src="./images/excelPhoto1.jpg" alt="image">
+    <div class="overlay">
+      <span>"</span>
+      <span>
+          <strong>
+            <p>Great Excel skill8</p>
+            <li>Vlookup</li>
+            <li>Pivot Table</li>
+            <li>Skill of HR analysis</li>
+         </strong>
+      </span>
+      <span></span>
+    </div>
+</div>
+     </section>
+
+
+     <!-- test222222222222222222222222222222 -->
+
+     <!-- <section class="Skill2">
+      <div class="container">
+    <div class="row my-custom-row justify-content-center align-items-center">
+      <div class="col-sm-12"><div class="p-3 border bg-light">
         <div class="item clean">
-            <img src="./images/excelPhoto1.jpg" alt="image">
-            <div class="overlay">
-              <span>"</span>
-              <span>
-                  <strong>
-                    <p>Great Excel skill</p>
-                    <li>Vlookup</li>
-                    <li>Pivot Table</li>
-                    <li>Skill of HR analysis</li>
-                 </strong>
-              </span>
-              <span></span>
-            </div>
+          <img src="./images/excelPhoto1.jpg" alt="image">
+          <div class="overlay">
+            <span>"</span>
+            <span>
+                <strong>
+                  <p>Great Excel skill</p>
+                  <li>Vlookup</li>
+                  <li>Pivot Table</li>
+                  <li>Skill of HR analysis</li>
+               </strong>
+            </span>
+            <span></span>
+          </div>
+      </div>
+      <div class="item clean">
+        <img src="./images/excelPhoto1.jpg" alt="image">
+        <div class="overlay">
+          <span>"</span>
+          <span>
+              <strong>
+                <p>Great Excel skill</p>
+                <li>Vlookup</li>
+                <li>Pivot Table</li>
+                <li>Skill of HR analysis</li>
+             </strong>
+          </span>
+          <span></span>
         </div>
-
-        <div class="item clean">
-            <img src="./images/excelPhoto1.jpg" alt="image">
-            <div class="overlay">
-              <span>"</span>
-              <span>
-                  <strong>
-                    <p>Great Excel skill</p>
-                    <li>Vlookup</li>
-                    <li>Pivot Table</li>
-                    <li>Skill of HR analysis</li>
-                 </strong>
-              </span>
-              <span></span>
-            </div>
-        </div>
-        <div class="item clean">
-            <img src="./images/excelPhoto1.jpg" alt="image">
-            <div class="overlay">
-              <span>"</span>
-              <span>
-                  <strong>
-                    <p>Great Excel skill</p>
-                    <li>Vlookup</li>
-                    <li>Pivot Table</li>
-                    <li>Skill of HR analysis</li>
-                 </strong>
-              </span>
-              <span></span>
-            </div>
-        </div>
-        <div class="item clean">
-            <img src="./images/excelPhoto1.jpg" alt="image">
-            <div class="overlay">
-              <span>"</span>
-              <span>
-                  <strong>
-                    <p>Great Excel skill</p>
-                    <li>Vlookup</li>
-                    <li>Pivot Table</li>
-                    <li>Skill of HR analysis</li>
-                 </strong>
-              </span>
-              <span></span>
-            </div>
-        </div>
+    </div>
+    <div class="item clean">
+      <img src="./images/excelPhoto1.jpg" alt="image">
+      <div class="overlay">
+        <span>"</span>
+        <span>
+            <strong>
+              <p>Great Excel skill</p>
+              <li>Vlookup</li>
+              <li>Pivot Table</li>
+              <li>Skill of HR analysis</li>
+           </strong>
+        </span>
+        <span></span>
+      </div>
+  </div>
+  <div class="item clean">
+    <img src="./images/excelPhoto1.jpg" alt="image">
+    <div class="overlay">
+      <span>"</span>
+      <span>
+          <strong>
+            <p>Great Excel skill</p>
+            <li>Vlookup</li>
+            <li>Pivot Table</li>
+            <li>Skill of HR analysis</li>
+         </strong>
+      </span>
+      <span></span>
+    </div>
+</div>
+      </div></div>   
+    </div>
+    </div>
+    </section>
+ -->
 
 
 
-
-
-
-
-
-
-
-        <!-- <div class="item uncover">
-            <img src="https://picsum.photos/400?grayscale" alt="image">
-            <div class="overlay">
-              <span>"</span>
-              <span>Image Credit to Unsplash.</span>
-              <span></span>
-              <span></span>
-            </div>
-        </div>
+     
         
-        <div class="item explode">
-            <img src="https://picsum.photos/400?grayscale" alt="image">
-            <div class="overlay">
-              <span>"</span>
-              <span>Image Credit to Unsplash.</span>
-              <span></span>
-            </div>
-        </div> -->
-
-
-      </section>
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-      <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src='js/custom.js'></script>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    -->
+ 
+    
   </body>
 </html>

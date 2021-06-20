@@ -19,7 +19,6 @@ p {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  font-family: "Chi_font_1";
   font-weight: bold;
   color: white;
 }
@@ -182,7 +181,7 @@ p {
 @media only screen and (max-width: 990px) {
   .logo {
     width: 155px;
-    position: absolute;
+    position: relative;
     top: -3px;
     left: auto;
     right: -15px;
