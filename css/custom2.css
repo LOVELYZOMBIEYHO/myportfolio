@@ -5,21 +5,19 @@
 } */
 
 body {
-  background-color: wheat;
-  /* background-image: url("../images/pexels-photo-245250.jpeg"); */
+  /* background-color: wheat; */
+  background-image: url("../images/pexels-photo-6985045.jpeg");
   background-size: cover;
   background-position: center;
 }
 
 .emptyBox {
   margin-top: 200px;
-  border: 1rem solid;
+  /* border: 1rem solid; */
 }
 
-.introBox {
-  background-color: gray;
-  border: 1rem solid red;
-  /* margin: 0px 500px; */
+.my-custom-row .bg-light {
+  background-color: #ebf0f7 !important;
 }
 
 h2.myResumeSubHead {
@@ -30,10 +28,61 @@ h2.myResumeSubHead {
   box-sizing: content-box;
 }
 
+/* card section------------------------------------------------------------------------------------------------------------------- */
+
+.introCard .card {
+  width: 80%;
+
+  /* Card 置中 */
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  background-color: #ebf0f7;
+}
+
+.introCard .card-img-top {
+  height: 50%;
+  position: relative;
+  /* 不壓縮圖片 */
+  object-fit: cover;
+}
+
+.introCard .card-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.introCard .intextTitle {
+  font-weight: bold;
+}
+
+/* card section------------------------------------------------------------------------------------------------------------------- */
+
+/* MySkill hover -------------------------------------------------------------------------------------------------------------------*/
+
+.hoverPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media only screen and (max-width: 990px) {
   .item {
     width: 300px;
     height: 300px;
+  }
+  .clean .overlay span:nth-child(2) {
+    top: 28%;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  body {
+    /* background-color: wheat; */
+    background-image: url("../images/pexels-photo-7130466.jpeg");
+    background-size: cover;
+    background-position: left;
   }
 }
 
@@ -47,5 +96,11 @@ h2.myResumeSubHead {
   .clean .overlay span:nth-child(2) {
     top: 25%;
     font-size: 10px;
+  }
+  body {
+    /* background-color: wheat; */
+    background-image: url("../images/pexels-photo-7130466.jpeg");
+    background-size: cover;
+    background-position: center;
   }
 }
