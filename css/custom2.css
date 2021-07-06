@@ -5,8 +5,21 @@
 } */
 
 body {
-  /* background-color: wheat; */
-  background-image: url("../images/pexels-photo-6985045.jpeg");
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-image: url("../images/pexels-photo-6985045_rotate.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -28,7 +41,15 @@ h2.myResumeSubHead {
   box-sizing: content-box;
 }
 
+/* introBox section------------------------------------------------------------------------------------------------------------------- */
+.introBox .introBoxCss {
+  border-radius: 30px;
+}
+
 /* card section------------------------------------------------------------------------------------------------------------------- */
+.card {
+  visibility: hidden;
+}
 
 .introCard .card {
   width: 80%;
@@ -58,6 +79,18 @@ h2.myResumeSubHead {
 
 /* card section------------------------------------------------------------------------------------------------------------------- */
 
+.myResumeSubHeadBG::after {
+  position: relative;
+  content: " ";
+  display: inline-block;
+  background-color: rgba(165, 225, 105, 0.3);
+  width: 8em;
+  height: 3em;
+  border-radius: 30px;
+  top: -3em;
+  z-index: -5;
+}
+
 /* MySkill hover -------------------------------------------------------------------------------------------------------------------*/
 
 .hoverPhoto {
@@ -79,10 +112,25 @@ h2.myResumeSubHead {
 
 @media only screen and (max-width: 420px) {
   body {
-    /* background-color: wheat; */
     background-image: url("../images/pexels-photo-7130466.jpeg");
     background-size: cover;
     background-position: left;
+  }
+
+  .clean .overlay span:nth-child(2) {
+    top: 20%;
+    font-size: 14px;
+  }
+  .clean .overlay span:nth-child(3) {
+    /* 將hover內的黑長條加高 - top */
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+  .mySkill p {
+    font-size: 20px;
   }
 }
 
@@ -94,7 +142,7 @@ h2.myResumeSubHead {
   }
   /* 將hover內的黑長條加高 - top */
   .clean .overlay span:nth-child(2) {
-    top: 25%;
+    top: 20%;
     font-size: 10px;
   }
   body {
@@ -102,5 +150,41 @@ h2.myResumeSubHead {
     background-image: url("../images/pexels-photo-7130466.jpeg");
     background-size: cover;
     background-position: center;
+  }
+  .mySkill p {
+    font-size: 18px;
+  }
+}
+
+/* animation Animista*/
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
   }
 }
