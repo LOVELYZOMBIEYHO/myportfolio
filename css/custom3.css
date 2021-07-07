@@ -1,0 +1,335 @@
+*  {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #2980b9;
+  background-image: url("../images/pexels-photo-6985045_rotate.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.titleH1 {
+  font-family: fantasy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: fantasy;
+  text-align: center;
+}
+
+.emptyBox {
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+}
+
+.testBox {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.lineBox {
+  margin-top: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.myRow {
+  margin-bottom: 100px;
+}
+
+.contentBox {
+  padding: 60px;
+  background-color: #262f40;
+  border-radius: 30px;
+  height: 40rem;
+  text-align: center;
+}
+
+/* -------Textbox----------------------------------- */
+
+.textBox {
+  color: white;
+}
+
+/*  word-wrap: break-word;   or  word-break: break-all; 將字不會換行不會過於BOX SIZE */
+.textHeader {
+  font-size: 4rem;
+  font-family: fantasy;
+  word-wrap: break-word;
+}
+
+.textContent {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+}
+
+/* --------imgBox---------------------------------- */
+/* .imgSetting {
+  border-radius: 30px;
+  width: 50rem;
+  height: 30rem;
+  object-fit: cover;
+  left: 30px;
+} */
+
+.imgBox {
+  position: relative;
+}
+
+.imgSetting {
+  border-radius: 30px;
+  width: 500rem;
+  height: 30rem;
+  object-fit: cover;
+  /* 懷疑是LEFT 出事 */
+  left: -90px;
+  position: absolute;
+}
+
+.imgSetting2 {
+  border-radius: 30px;
+  width: 500rem;
+  height: 30rem;
+  object-fit: cover;
+  left: 100px;
+  position: absolute;
+}
+
+/* ------------------------------------------ */
+
+@media only screen and (max-width: 1200px) {
+  .imgSetting,
+  .imgSetting2 {
+    width: 50rem;
+    height: 20rem;
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .imgSetting {
+    width: 50rem;
+    height: 20rem;
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+  .imgSetting2 {
+    width: 50rem;
+    height: 20rem;
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+  .contentBox {
+    padding: 0px;
+    margin: 0px;
+  }
+  /* 有問題 */
+  .lineBox {
+    padding: 30px;
+  }
+  .textBox {
+    padding: 0;
+  }
+  .textHeader {
+    padding: 0;
+    padding-top: 30px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    word-break: break-all;
+  }
+  .textContent {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* 新加 */
+  }
+  .textContentRight {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .textContentLeft {
+    padding-left: 70px;
+  }
+}
+
+/* @media only screen and (max-width: 984x) {
+  
+} */
+
+@media only screen and (max-width: 824px) {
+  .textHeader {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .imgSetting {
+    width: 50rem;
+    height: 15rem;
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+  .imgSetting2 {
+    width: 50rem;
+    height: 15rem;
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+  .contentBox {
+    padding: 0px;
+    margin: 0px;
+  }
+  /* 有問題 */
+  .lineBox {
+    padding: 30px;
+  }
+  .textBox {
+    padding: 0;
+  }
+  .textHeader {
+    padding: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textContent {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textContentRight {
+    padding-left: 30px;
+    padding-right: 41px;
+  }
+
+  .textContentLeft {
+    padding-left: 30px;
+    padding-right: 41px;
+  }
+}
+
+@media only screen and (max-width: 419px) {
+  .imgSetting {
+    width: 50rem;
+    height: 15rem;
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+  .imgSetting2 {
+    width: 50rem;
+    height: 15rem;
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+  .contentBox {
+    padding: 0px;
+    margin: 0px;
+  }
+  /* 有問題 */
+  .lineBox {
+    padding: 30px;
+  }
+  .textBox {
+    padding: 0;
+  }
+  .textHeader {
+    padding: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .textContent {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+  }
+}
+
+/* --------Animation---------------------------------- */
+
+.slide-right {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
