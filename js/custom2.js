@@ -29,3 +29,18 @@ if ($(window).width() >= 500) {
   $(".card").css("visibility", "visible");
   $(".card").addClass("text-focus-in");
 }
+
+$(window).scroll(function () {
+  const scroll1 = $(window).scrollTop();
+  if ($(window).width() < 500) {
+    if (scroll1 >= 3000) {
+      $(".item").css("visibility", "visible");
+      $(".item").addClass("text-focus-in");
+    }
+  } else if ($(window).width() >= 500) {
+    if (scroll1 >= 500) {
+      $(".item").css("visibility", "visible");
+      $(".item").addClass("text-focus-in");
+    }
+  }
+});

@@ -5,6 +5,19 @@
 } */
 
 body {
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-image: linear-gradient(#f2dc77, #19caf3);
   /* background-image: url("../images/pexels-photo-6985045_rotate.jpg"); */
   background-size: cover;
@@ -37,6 +50,16 @@ h2.myResumeSubHead {
 .card {
   visibility: hidden;
   border-radius: 30px;
+}
+
+.introCard .card {
+  width: 80%;
+
+  /* Card 置中 */
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+  background-color: #ebf0f7;
 }
 
 .card-img-top {
@@ -78,10 +101,6 @@ h2.myResumeSubHead {
   object-fit: cover;
 }
 
-.item {
-  visibility: hidden;
-}
-
 @media only screen and (max-width: 990px) {
   .item {
     width: 300px;
@@ -94,6 +113,12 @@ h2.myResumeSubHead {
 }
 
 @media only screen and (max-width: 420px) {
+  body {
+    background-image: url("../images/pexels-photo-7130466.jpeg");
+    background-size: cover;
+    background-position: left;
+  }
+
   .clean .overlay span:nth-child(2) {
     top: 20%;
     font-size: 14px;
@@ -122,7 +147,12 @@ h2.myResumeSubHead {
     top: 20%;
     font-size: 10px;
   }
-
+  body {
+    /* background-color: wheat; */
+    background-image: url("../images/pexels-photo-7130466.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
   .mySkill p {
     font-size: 18px;
   }
@@ -158,203 +188,5 @@ h2.myResumeSubHead {
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
-  }
-}
-
-/*  Background animation */
-
-body {
-  background-color: #f2dc77;
-}
-
-.circle {
-  position: absolute;
-  border-radius: 50%;
-  background: #19caf3;
-  animation: ripple 15s infinite;
-  box-shadow: 0px 0px 1px 0px #508fb9;
-}
-
-.small {
-  width: 200px;
-  height: 200px;
-  left: -100px;
-  bottom: -100px;
-}
-
-.medium {
-  width: 400px;
-  height: 400px;
-  left: -200px;
-  bottom: -200px;
-}
-
-.large {
-  width: 600px;
-  height: 600px;
-  left: -300px;
-  bottom: -300px;
-}
-
-.xlarge {
-  width: 800px;
-  height: 800px;
-  left: -400px;
-  bottom: -400px;
-}
-
-.xxlarge {
-  width: 1000px;
-  height: 1000px;
-  left: -500px;
-  bottom: -500px;
-}
-
-.shade1 {
-  opacity: 0.2;
-}
-.shade2 {
-  opacity: 0.5;
-}
-
-.shade3 {
-  opacity: 0.7;
-}
-
-.shade4 {
-  opacity: 0.8;
-}
-
-.shade5 {
-  opacity: 0.9;
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale(0.8);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(0.8);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .small {
-    width: 100px;
-    height: 100px;
-    left: -100px;
-    bottom: -100px;
-  }
-
-  .medium {
-    width: 300px;
-    height: 300px;
-    left: -200px;
-    bottom: -200px;
-  }
-
-  .large {
-    width: 500px;
-    height: 500px;
-    left: -300px;
-    bottom: -300px;
-  }
-
-  .xlarge {
-    width: 700px;
-    height: 700px;
-    left: -400px;
-    bottom: -400px;
-  }
-
-  .xxlarge {
-    width: 900px;
-    height: 900px;
-    left: -500px;
-    bottom: -500px;
-  }
-  body {
-    background-image: linear-gradient(#f2dc77, #19caf3);
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media only screen and (max-width: 491px) {
-  .small {
-    width: 50px;
-    height: 50px;
-    left: -100px;
-    bottom: -100px;
-  }
-
-  .medium {
-    width: 250px;
-    height: 250px;
-    left: -200px;
-    bottom: -200px;
-  }
-
-  .large {
-    width: 450px;
-    height: 450px;
-    left: -300px;
-    bottom: -300px;
-  }
-
-  .xlarge {
-    width: 650px;
-    height: 650px;
-    left: -400px;
-    bottom: -400px;
-  }
-
-  .xxlarge {
-    width: 800px;
-    height: 800px;
-    left: -500px;
-    bottom: -500px;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .small {
-    width: 50px;
-    height: 50px;
-    left: -100px;
-    bottom: -100px;
-  }
-
-  .medium {
-    width: 250px;
-    height: 250px;
-    left: -200px;
-    bottom: -200px;
-  }
-
-  .large {
-    width: 450px;
-    height: 450px;
-    left: -300px;
-    bottom: -300px;
-  }
-
-  .xlarge {
-    width: 650px;
-    height: 650px;
-    left: -400px;
-    bottom: -400px;
-  }
-
-  .xxlarge {
-    width: 750px;
-    height: 750px;
-    left: -500px;
-    bottom: -500px;
   }
 }
