@@ -13,6 +13,8 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Tailwind -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <LInk href='css/NavBar.css' rel='stylesheet'> </LInk>
 
     <LInk href='css/hoverEffect2.css' rel='stylesheet'> </LInk>
@@ -51,8 +53,22 @@
           </div>
         </div>
       </nav>
-    
-
+      <!-- Background animation -->
+      <section>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-2">
+            <div class="ripple-background">
+            <div class="circle xxlarge shade1"></div>
+            <div class="circle xlarge shade2"></div>
+            <div class="circle large shade3"></div>
+            <div class="circle mediun shade4"></div>
+            <div class="circle small shade5"></div>
+          </div>
+        </div>
+        
+        </div>
+        
+      </section>
   
 
       <section class="emptyBox">
@@ -86,44 +102,171 @@
 
       <!-- Card Section------------------------------->
       <!-- 一定要加mx-auto -->
-      <section class= "introCard" >
-        <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto">
-          <div class="col">
-            <div class="card h-100">
-              <img src="./images/Graduate_photo.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Education</h5>
-                <p class="card-text">
-                  <p class="intextTitle">Tung Wah College</p> Bachelor of Social Science (Honours) in Applied Psychology
-                </p>
+      <section class= "introCard 2xl:mx-11 xl:mx-14 lg:mx-20 md:mx-24" >
+           <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto card">
+              <div
+                class="
+                  absolute
+                  inset-0
+                  bg-gradient-to-r
+                  from-blue-300
+                  to-blue-600
+                  shadow-lg
+                  transform
+                  -skew-y-6
+                  sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl
+                "
+              ></div>
+              <div
+                class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20"
+              >
+                <div class="max-w-md mx-auto">
+                  <div>
+                    <h1 class="text-2xl font-semibold text-center">Education</h1>
+                    <img
+                      alt="Placeholder"
+                      class="block h-auto w-full max-h-72 object-cover xl:max-h-72 lg:max-h-56 md:max-h-44 sm:max-h-72"
+                      src="../images/Graduate_photo.jpg"
+                    />
+                  </div>
+                  <!-- 空格 SPACE -->
+                  <div class="divide-y divide-gray-200">
+                    <div
+                      class="
+                        py-8
+                        text-base
+                        leading-6
+                        space-y-4
+                        text-gray-700
+                        sm:text-lg sm:leading-7
+                      "
+                    ></div>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl font-semibold text-center underline">Education</h2>
+                    <p class="text-center">
+                         Tung Wah College Bachelor of Social Science (Honours) in Applied Psychology
+                    </p>
+                  </div>
+                </div>
               </div>
+              <br>
+            </div>
+            
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto card">
+              <div
+                class="
+                  absolute
+                  inset-0
+                  bg-gradient-to-r
+                  from-blue-300
+                  to-blue-600
+                  shadow-lg
+                  transform
+                  -skew-y-6
+                  sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl
+                "
+              ></div>
+              <div
+                class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20"
+              >
+                <div class="max-w-md mx-auto">
+                  <div>
+                    <h1 class="text-2xl font-semibold text-center">Pending Title</h1>
+                    <img
+                      alt="Placeholder"
+                      class="block h-auto w-full max-h-72 object-cover xl:max-h-72 lg:max-h-56 md:max-h-44 sm:max-h-72"
+                      src="./images/search-engine-optimization-4111000_1920.jpg"
+                    />
+                  </div>
+                  <!-- 空格 SPACE -->
+                  <div class="divide-y divide-gray-200">
+                    <div
+                      class="
+                        py-8
+                        text-base
+                        leading-6
+                        space-y-4
+                        text-gray-700
+                        sm:text-lg sm:leading-7
+                      "
+                    ></div>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl font-semibold text-center">Pending title</h2>
+                    <p class="text-center">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Exercitationem repellat in veniam, deleniti, qui ad hic harum
+                      distinctio perspiciatis reiciendis quos nihil laborum accusamus
+                      cupiditate provident, placeat ipsum molestias iure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <br>
+            </div>
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto card">
+              <div
+                class="
+                  absolute
+                  inset-0
+                  bg-gradient-to-r
+                  from-blue-300
+                  to-blue-600
+                  shadow-lg
+                  transform
+                  -skew-y-6
+                  sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl
+                "
+              ></div>
+              <div
+                class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20"
+              >
+                <div class="max-w-md mx-auto">
+                  <div>
+                    <h1 class="text-2xl font-semibold text-center">Pending Title</h1>
+                    <img
+                      alt="Placeholder"
+                      class="block h-auto w-full max-h-72 object-cover xl:max-h-64 lg:max-h-56 md:max-h-44 sm:max-h-72"
+                      src="https://picsum.photos/600/400/?random"
+                    />
+                  </div>
+                  <!-- 空格 SPACE -->
+                  <div class="divide-y divide-gray-200">
+                    <div
+                      class="
+                        py-8
+                        text-base
+                        leading-6
+                        space-y-4
+                        text-gray-700
+                        sm:text-lg sm:leading-7
+                      "
+                    ></div>
+                  </div>
+                  <div>
+                    <h2 class="text-2xl font-semibold text-center">Pending title</h2>
+                    <p class="text-center">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Exercitationem repellat in veniam, deleniti, qui ad hic harum
+                      distinctio perspiciatis reiciendis quos nihil laborum accusamus
+                      cupiditate provident, placeat ipsum molestias iure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <br>
             </div>
           </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./images/search-engine-optimization-4111000_1920.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Digital Marketing</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img src="./images/龍傲天的男主角竟然甘心做一個無名士兵!你在玩我吧【心理學ACG談】.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Management Experience</h5>
-                <p class="card-text">D-biz & YouTh Forum.</p>
-              </div>
-            </div>
-          </div>
+          
 
 
       </section>
 
-      
-
+      <!-- card section 2 -->
+     
        
 
 
@@ -137,18 +280,23 @@
       <br>
       <br>
       <br>
+      
        <!-- My Skill 1 -->
       <section class="mySkill">        
         <div class="item clean">
             <img class="hoverPhoto" src="./images/pexels-photo-109371.jpeg" alt="image">
             <div class="overlay">
               <span></span>
-              <span>
+              <span class=>
                   <strong>
                     <p>Basic web skills</p>
-                    <li>WordPress</li>
+                    <div class ="text-left">
+                    <br>
+                      <li>WordPress</li>
                     <li>Html,CSS,JavaScript</li>
                     <li>Bootstrap, Figma</li>
+                    </div>
+                    
                 </strong>
               </span>
               <span></span>
@@ -161,9 +309,12 @@
               <span>
                   <strong>
                     <p>Language</p>
+                    <div class ="text-left">
+                      <br>
                     <li>Excellent - Chinese</li>
                     <li>Good - English</li>
-                    <li>Basic - Japanese <br>(Level of N2)</li>
+                    <li>Basic - Japanese <br> &ensp;&ensp;&ensp;&ensp;(Level of N2)</li>
+                    </div>
                 </strong>
               </span>
               <span></span>
@@ -176,9 +327,12 @@
             <span>
                 <strong>
                   <p>Great Excel skill</p>
+                  <div class ="text-left">
+                    <br>
                   <li>Vlookup</li>
                   <li>Pivot Table</li>
                   <li>Skill of HR analysis</li>
+                  </div>
               </strong>
             </span>
             <span></span>
@@ -191,9 +345,11 @@
             <span>
                 <strong>
                   <p>Video Editing Skills</p>
+                  <div class ="text-left">
+                    <br>
                   <li>Adobe Photoshop</li>
                   <li>Adobe Premiere</li>
-                  
+                  </div>
               </strong>
             </span>
             <span></span>
@@ -206,9 +362,12 @@
           <span>
               <strong>
                 <p>Creative personality</p>
+                <div class ="text-left">
+                  <br>
                 <li>YouTube</li>
                 <li>Blog</li>
-                <li>Compose Music </li>
+                <li>Music Composition </li>
+                </div>
             </strong>
           </span>
           <span></span>
@@ -240,3 +399,6 @@
     
   </body>
 </html>
+
+
+
