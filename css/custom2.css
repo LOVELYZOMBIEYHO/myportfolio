@@ -164,13 +164,15 @@ h2.myResumeSubHead {
 /*  Background animation */
 
 body {
-  background-color: #f2dc77;
+  background-image: linear-gradient(#19caf3, #f2dc77);
+  background-size: cover;
+  background-position: top;
 }
 
 .circle {
   position: absolute;
   border-radius: 50%;
-  background: #19caf3;
+  background: #f2dc77;
   animation: ripple 15s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
@@ -277,11 +279,6 @@ body {
     height: 900px;
     left: -500px;
     bottom: -500px;
-  }
-  body {
-    background-image: linear-gradient(#f2dc77, #19caf3);
-    background-size: cover;
-    background-position: center;
   }
 }
 
