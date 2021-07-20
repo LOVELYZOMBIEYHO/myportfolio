@@ -18,7 +18,7 @@ h2 {
   color: #19caf3;
   color: #ffc107;
   color: #ff9d09;
-  text-shadow: 0 0 10px #6e2187, 0 0 10px #332c2c;
+  text-shadow: 0 0 10px #000000, 0 0 10px #c92b2b;
   font-weight: bolder;
   font-size: 30px;
 }
@@ -42,17 +42,6 @@ h2 {
   background-color: #ebf0f7 !important;
 }
 
-/* h2.myResumeSubHead {
-  font-family: "Monoton", cursive;
-  color: #f2dc77;
-  color: #19caf3;
-  color: #ffc107;
-  color: #ff9d09;
-  text-shadow: 0 0 10px #6e2187, 0 0 10px #332c2c;
-  font-weight: bolder;
-  font-size: 30px;
-} */
-
 .selector-for-some-widget {
   box-sizing: content-box;
 }
@@ -68,7 +57,7 @@ h2 {
   color: #19caf3;
   color: #ffc107;
   color: #ff9d09;
-  text-shadow: 0 0 10px #6e2187, 0 0 10px #332c2c;
+  text-shadow: 0 0 10px #000000, 0 0 10px #c92b2b;
   font-weight: bolder;
   font-size: 30px;
 }

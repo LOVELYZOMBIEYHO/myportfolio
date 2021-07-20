@@ -12,7 +12,7 @@ body {
 }
 
 .titleH1 {
-  font-family: fantasy;
+  font-family: "Anton", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 4rem;
-  font-family: fantasy;
+  font-family: "Anton", sans-serif;
   text-align: center;
 }
 
@@ -76,7 +76,7 @@ footer {
 /*  word-wrap: break-word;   or  word-break: break-all; 將字不會換行不會過於BOX SIZE */
 .textHeader {
   font-size: 4rem;
-  font-family: fantasy;
+  font-family: "Anton", sans-serif;
   word-wrap: break-word;
 }
 
