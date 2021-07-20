@@ -278,8 +278,8 @@ p {
 @media only screen and (min-width: 1024px) and (max-height: 1000px) {
   .right {
     transform: scale(0.5);
-    top: -1vh;
-    left: 280px;
+    top: -3vh;
+    left: 600px;
   }
 }
 
