@@ -11,6 +11,28 @@ body {
   background-position: center;
 }
 
+h1,
+h2 {
+  font-family: "Monoton", cursive;
+  color: #f2dc77;
+  color: #19caf3;
+  color: #ffc107;
+  color: #ff9d09;
+  text-shadow: 0 0 10px #6e2187, 0 0 10px #332c2c;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.introBoxCss P,
+.introCard p {
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.introCard h2 {
+  margin-bottom: 30px;
+}
+
 .emptyBox {
   margin-top: 200px;
   /* border: 1rem solid; */
@@ -20,9 +42,16 @@ body {
   background-color: #ebf0f7 !important;
 }
 
-h2.myResumeSubHead {
-  color: red;
-}
+/* h2.myResumeSubHead {
+  font-family: "Monoton", cursive;
+  color: #f2dc77;
+  color: #19caf3;
+  color: #ffc107;
+  color: #ff9d09;
+  text-shadow: 0 0 10px #6e2187, 0 0 10px #332c2c;
+  font-weight: bolder;
+  font-size: 30px;
+} */
 
 .selector-for-some-widget {
   box-sizing: content-box;
@@ -33,6 +62,17 @@ h2.myResumeSubHead {
   border-radius: 30px;
 }
 
+.introBoxCss h2 {
+  font-family: "Monoton", cursive;
+  color: #f2dc77;
+  color: #19caf3;
+  color: #ffc107;
+  color: #ff9d09;
+  text-shadow: 0 0 10px #6e2187, 0 0 10px #332c2c;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
 /* card section------------------------------------------------------------------------------------------------------------------- */
 .card {
   visibility: hidden;
@@ -40,11 +80,9 @@ h2.myResumeSubHead {
 }
 
 .card-img-top {
-  height: 50%;
-  position: relative;
   /* 不壓縮圖片 */
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .card-title {
@@ -56,15 +94,19 @@ h2.myResumeSubHead {
   font-weight: bold;
 }
 
+.manageMent {
+  object-position: top;
+}
+
 /* card section------------------------------------------------------------------------------------------------------------------- */
 
 .myResumeSubHeadBG::after {
   position: relative;
   content: " ";
   display: inline-block;
-  background-color: rgba(165, 225, 105, 0.3);
-  width: 8em;
-  height: 3em;
+  background-color: rgba(68, 126, 160, 0.3);
+  width: 18em;
+  height: 4em;
   border-radius: 30px;
   top: -3em;
   z-index: -5;
@@ -80,6 +122,7 @@ h2.myResumeSubHead {
 
 .item {
   visibility: hidden;
+  border-radius: 30px;
 }
 
 @media only screen and (max-width: 990px) {

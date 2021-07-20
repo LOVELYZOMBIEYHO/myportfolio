@@ -1,20 +1,42 @@
-@font-face {
-  font-family: "Chi_font_1";
-  src: url("中文點陣圖字型/MBitmapSquareHK-Light-Roman.woff2") format("woff2"),
-    url("中文點陣圖字型/MBitmapSquareHK-Light-Roman.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: "Monoton", cursive;
+  color: #f2dc77;
+  color: #19caf3;
+  color: #ffc107;
+  color: #ff9d09;
+}
+
+/* 130 for desktop 30px for mobile */
+h2 {
+  font-size: 5.5vw;
+  text-shadow: 0 0 10px #000000, 0 0 10px #c92b2b;
+}
+
+h2:nth-of-type(1) {
+  letter-spacing: 0;
+}
+h2:nth-of-type(1):hover {
+  letter-spacing: 3px;
+}
+
 p {
-  font-family: "Chi_font_1";
+  font-family: fantasy;
+
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #000000, 0 0 10px #c92b2b;
+  font-size: 2.5vw;
+  -webkit-text-stroke: 0.2vw rgb(114, 83, 83);
+
+  /* color: rgb(2, 2, 2);
+  -webkit-text-stroke: 0.1vw rgb(255, 244, 244); */
+}
+
+#loadPage {
   color: red;
 }
 
@@ -27,21 +49,32 @@ p {
   position: relative;
 }
 
-/* right為裝住相的block, firstPhoto是相  absolute的寫法中間文字不會走位,但需要調幾次RWD*/
+/* right為裝住相的block, logoPhoto是相  absolute的寫法中間文字不會走位,但需要調幾次RWD*/
 .right {
   position: absolute;
-  right: 200px;
+  right: 3vw;
   top: 100px;
-}
-/* .right {
-  position: relative;
-  right: -800px;
-  top: 0px;
-} */
-/* right為裝住相的block, firstPhoto是相 */
-.firstPhoto {
-  height: 500px;
+  /* overflow: hidden; */
   border-radius: 100%;
+}
+
+/* right為裝住相的block, logoPhoto是相 */
+.logoPhoto {
+  border-radius: 100%;
+  object-fit: cover;
+  width: 600px;
+  height: 600px;
+}
+
+.firstPhoto {
+  object-position: right;
+}
+
+.secondPhoto {
+  object-position: top;
+}
+
+.thirdPhoto {
 }
 
 /* 將NAVBAR 預設的padding取消,用以將BAR變色沒有空白 
@@ -91,19 +124,19 @@ p {
 }
 /* 首頁大圖Standard 落法 */
 #slide1 {
-  background-image: url("../images/Heroslide_1.jpg");
+  background-image: url("../images/Heroslide_photo_1_副本1.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #slide2 {
-  background-image: url("../images/龍傲天的男主角竟然甘心做一個無名士兵!你在玩我吧【心理學ACG談】.png");
+  background-image: url("../images/linear\ gradient-portfolio_project_1.JPG");
   background-size: cover;
   background-position: center;
 }
 
 #slide3 {
-  background-image: url("../images/雷姆原來是心理學家!｜究竟她用甚麼方法拯救昂\ 【心理學ACG談】.png");
+  background-image: url("../images/pexels-mikael-blomkvist-6476808.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -164,6 +197,13 @@ p {
   flex-direction: row;
 }
 
+@media only screen and (max-width: 2000px) {
+  .logoPhoto {
+    width: 500px;
+    height: 500px;
+  }
+}
+
 @media only screen and (max-width: 1542px) {
   /* 將圖片可用IPAD */
   .right {
@@ -171,14 +211,18 @@ p {
     right: 200px;
     top: 180px;
   }
-  .firstPhoto {
-    height: 300px;
-    border-radius: 100%;
+  .logoPhoto {
+    width: 400px;
+    height: 400px;
   }
 }
 
 /* 只有當畫面闊度大小 小於990PX時應用- FOR RWD */
 @media only screen and (max-width: 990px) {
+  h2 {
+    font-size: 70px;
+  }
+
   .logo {
     width: 155px;
     position: relative;
@@ -214,17 +258,18 @@ p {
     padding-right: 1em;
   }
 
-  /* right為裝住相的block, firstPhoto是相 */
+  /* right為裝住相的block, logoPhoto是相 */
   .right {
     position: relative;
     text-align: center;
     left: 0px;
     top: 0px;
   }
-  /* right為裝住相的block, firstPhoto是相 */
-  .firstPhoto {
-    height: 150px;
-    border-radius: 100%;
+
+  /* right為裝住相的block, logoPhoto是相 */
+  .logoPhoto {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -260,4 +305,10 @@ p {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media only screen and (max-width: 535px) {
+  h2 {
+    font-size: 30px;
+  }
 }
