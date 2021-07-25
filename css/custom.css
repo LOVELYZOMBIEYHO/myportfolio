@@ -76,6 +76,7 @@ p {
 }
 
 .thirdPhoto {
+  object-position: right;
 }
 
 /* 將NAVBAR 預設的padding取消,用以將BAR變色沒有空白 
@@ -274,6 +275,8 @@ p {
   }
 }
 
+/* RWD-------------------------------------------------------------------- */
+
 /* for Ipad */
 @media only screen and (min-width: 1024px) and (max-height: 1000px) {
   .right {
@@ -283,12 +286,53 @@ p {
   }
 }
 
-/* @media only screen and (max-width: 1033px),
-  only screen and (max-height: 1154px) {
+/* for Surface Duo */
+@media only screen and (min-width: 540px) and (max-height: 720px) {
   .right {
-    transform: scale(0.1);
+    transform: scale(0.9);
+    top: 13vh;
   }
-} */
+}
+
+/* for Iphone 6/7/8 */
+@media only screen and (min-width: 375px) and (max-height: 667px) {
+  .right {
+    transform: scale(0.9);
+    top: 5vh;
+  }
+}
+
+/* for Galaxy S5 */
+@media only screen and (min-width: 360px) and (max-height: 640px) {
+  .right {
+    transform: scale(0.9);
+    top: 5vh;
+  }
+}
+
+/* for Iphone5 */
+@media only screen and (max-width: 321px) and (max-height: 570px) {
+  .right {
+    transform: scale(0.7);
+    top: 12vh;
+  }
+}
+
+/* for Galaxy Fold */
+@media only screen and (max-width: 280px) and (max-height: 653px) {
+  .right {
+    transform: scale(0.7);
+    top: 12vh;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+/* RWD-------------------------------------------------------------------- */
 
 #myBtn {
   display: none; /* Hidden by default */
@@ -308,10 +352,4 @@ p {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
-}
-
-@media only screen and (max-width: 535px) {
-  h2 {
-    font-size: 30px;
-  }
 }

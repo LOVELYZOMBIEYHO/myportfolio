@@ -23,10 +23,22 @@ h2 {
   font-size: 30px;
 }
 
+a {
+  color: red;
+}
+a:hover {
+  color: #ff9d09;
+}
+
 .introBoxCss P,
-.introCard p {
-  font-family: sans-serif;
+.introCard p,
+.introCard li {
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: bolder;
+  font-size: 25px;
+}
+
+.introCard li {
 }
 
 .introCard h2 {
@@ -76,7 +88,6 @@ h2 {
 
 .card-title {
   font-weight: bold;
-  text-decoration: underline;
 }
 
 .intextTitle {
