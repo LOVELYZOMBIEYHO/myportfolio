@@ -330,67 +330,9 @@ footer {
 
 /* --------Animation---------------------------------- */
 
-.slide-right {
-  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 
-@-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-/* ---------- */
-.slide-left {
-  -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
 
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-/* ---------- */
-.text-focus-in {
+/* .text-focus-in {
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -419,9 +361,12 @@ footer {
     filter: blur(0px);
     opacity: 1;
   }
-}
+} */
+
+
+
 /* ---------- */
-.slide-fwd-top {
+/* .slide-fwd-top {
   -webkit-animation: slide-fwd-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
   animation: slide-fwd-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -446,7 +391,7 @@ footer {
     -webkit-transform: translateZ(160px) translateY(-100px);
     transform: translateZ(160px) translateY(-100px);
   }
-}
+} */
 
 /*  Background animation---------------------------------------------------------- */
 body {
