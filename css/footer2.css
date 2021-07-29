@@ -1,0 +1,76 @@
+.footer,
+.footerBox1,
+.footerBox2 {
+  border: solid 3px black;
+  background-color: #ff9d09;
+  /* background-color: whitesmoke; */
+  font-size: 1.2vw;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+}
+body > footer > div > div > div:nth-child(1) > p {
+  font-size: 1.3vw;
+}
+.footerBox3 {
+  margin-top: 1.5vw;
+  /* margin-right: 1vw; */
+}
+
+.footerBox3 svg {
+  /* transform: scale(2);
+  width: 30%; */
+  transform: scale(14);
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+/* ---------ScrollToTop----------------------------------------------- */
+
+.scrollToTop {
+  transform: rotate(-90deg) scale(3);
+  /* 隨畫面縮小 */
+  width: calc(2.5vw);
+  /* svg變有手指 */
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* ------RWD--------------------------------------------- */
+
+@media only screen and (max-width: 991px) {
+  .footerBox3 svg {
+    margin-left: 25px;
+    margin-right: 24px;
+  }
+  body > footer > div > div > div:nth-child(1) > p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .scrollToTop {
+    width: 15px;
+  }
+
+  .footerBox3 svg {
+    transform: scale(1.7);
+    width: 30px;
+    height: 30px;
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 301px) {
+  .footerBox3 svg {
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+  body > footer > div > div > div:nth-child(1) > p {
+    font-size: 3px;
+  }
+}

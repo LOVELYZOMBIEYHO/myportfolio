@@ -24,7 +24,7 @@
 //   $(".myRow").addClass("text-focus-in");
 // }
 
-// -----------Animation------------------------------------------
+// -----------scroll fade in/out Animation------------------------------------------
 
 $(window).on("load", function () {
   function fade() {
@@ -57,5 +57,15 @@ $(window).on("load", function () {
   fade();
   $(window).scroll(function () {
     fade();
+  });
+});
+
+// ---------scroll to top-------------------------------------------------------------------
+let scrollToTop = document.querySelector(".scrollToTop");
+scrollToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
   });
 });

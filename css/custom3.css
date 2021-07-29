@@ -127,7 +127,15 @@ footer {
 
 .websiteList {
   width: 90%;
-  border: solid 3px;
+  padding: 300px;
+  
+}
+
+
+
+.websiteListTd{
+  border-radius: 30px;
+  background-color: rgb(228, 228, 168);
   
 }
 
@@ -142,7 +150,11 @@ footer {
 }
 
 
-/* -------------------------------------------------------- */
+
+
+
+
+/* ---------RWD----------------------------------------------- */
 @media only screen and (max-width: 1200px) {
   .imgSetting,
   .imgSetting2 {
@@ -213,7 +225,6 @@ footer {
   }
   .websiteList {
     width: 90%;
-    border: solid 3px;
     margin-left: 30px;
   }
 }

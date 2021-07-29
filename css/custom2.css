@@ -35,10 +35,7 @@ a:hover {
 .introCard li {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bolder;
-  font-size: 25px;
-}
-
-.introCard li {
+  font-size: 1.25vw;
 }
 
 .introCard h2 {
@@ -133,6 +130,14 @@ a:hover {
   .clean .overlay span:nth-child(2) {
     top: 28%;
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .introBoxCss P,
+  .introCard p,
+  .introCard li {
+    font-size: 25px;
   }
 }
 

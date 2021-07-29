@@ -197,3 +197,13 @@ window.addEventListener(
   },
   false
 );
+
+// ---------scroll to top-------------------------------------------------------------------
+let scrollToTop = document.querySelector(".scrollToTop");
+scrollToTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
