@@ -1,0 +1,405 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-image: linear-gradient(#f2dc77, #19caf3);
+  /* background-image: url("../images/pexels-photo-6985045_rotate.jpg"); */
+  background-size: cover;
+  background-position: center;
+}
+
+h1,
+h2 {
+  font-family: "Monoton", cursive;
+  color: #f2dc77;
+  color: #19caf3;
+  color: #ffc107;
+  color: #ff9d09;
+  text-shadow: 0 0 10px #000000, 0 0 10px #c92b2b;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+a {
+  color: red;
+}
+a:hover {
+  color: #ff9d09;
+}
+
+.introBoxCss P,
+.introCard p,
+.introCard li {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bolder;
+  font-size: 1.25vw;
+}
+
+.introCard h2 {
+  margin-bottom: 30px;
+}
+
+.emptyBox {
+  margin-top: 200px;
+  /* border: 1rem solid; */
+}
+
+.my-custom-row .bg-light {
+  background-color: #ebf0f7 !important;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+/* introBox section------------------------------------------------------------------------------------------------------------------- */
+.introBox .introBoxCss {
+  border-radius: 30px;
+}
+
+.introBoxCss h2 {
+  font-family: "Monoton", cursive;
+  color: #f2dc77;
+  color: #19caf3;
+  color: #ffc107;
+  color: #ff9d09;
+  text-shadow: 0 0 10px #000000, 0 0 10px #c92b2b;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+/* card section------------------------------------------------------------------------------------------------------------------- */
+.card {
+  visibility: hidden;
+  border-radius: 30px;
+}
+
+.card-img-top {
+  /* 不壓縮圖片 */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.intextTitle {
+  font-weight: bold;
+}
+
+.manageMent {
+  object-position: top;
+}
+
+/* card section------------------------------------------------------------------------------------------------------------------- */
+
+.myResumeSubHeadBG::after {
+  position: relative;
+  content: " ";
+  display: inline-block;
+  background-color: rgba(68, 126, 160, 0.3);
+  width: 18em;
+  height: 4em;
+  border-radius: 30px;
+  top: -3em;
+  z-index: -5;
+}
+
+/* MySkill hover -------------------------------------------------------------------------------------------------------------------*/
+
+.hoverPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item {
+  visibility: hidden;
+  border-radius: 30px;
+}
+
+@media only screen and (max-width: 990px) {
+  .item {
+    width: 300px;
+    height: 300px;
+  }
+  .clean .overlay span:nth-child(2) {
+    top: 28%;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .introBoxCss P,
+  .introCard p,
+  .introCard li {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .clean .overlay span:nth-child(2) {
+    top: 20%;
+    font-size: 14px;
+  }
+  .clean .overlay span:nth-child(3) {
+    /* 將hover內的黑長條加高 - top */
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+  .mySkill p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 281px) {
+  /* 將hover內的字加高 - top */
+  .item {
+    width: 250px;
+    height: 250px;
+  }
+  /* 將hover內的黑長條加高 - top */
+  .clean .overlay span:nth-child(2) {
+    top: 20%;
+    font-size: 10px;
+  }
+
+  .mySkill p {
+    font-size: 18px;
+  }
+}
+
+/* animation Animista*/
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/*  Background animation */
+
+body {
+  background-image: linear-gradient(#19caf3, #f2dc77);
+  background-size: cover;
+  background-position: top;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: #f2dc77;
+  animation: ripple 15s infinite;
+  box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small {
+  width: 200px;
+  height: 200px;
+  left: -100px;
+  bottom: -100px;
+}
+
+.medium {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  bottom: -200px;
+}
+
+.large {
+  width: 600px;
+  height: 600px;
+  left: -300px;
+  bottom: -300px;
+}
+
+.xlarge {
+  width: 800px;
+  height: 800px;
+  left: -400px;
+  bottom: -400px;
+}
+
+.xxlarge {
+  width: 1000px;
+  height: 1000px;
+  left: -500px;
+  bottom: -500px;
+}
+
+.shade1 {
+  opacity: 0.2;
+}
+.shade2 {
+  opacity: 0.5;
+}
+
+.shade3 {
+  opacity: 0.7;
+}
+
+.shade4 {
+  opacity: 0.8;
+}
+
+.shade5 {
+  opacity: 0.9;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .small {
+    width: 100px;
+    height: 100px;
+    left: -100px;
+    bottom: -100px;
+  }
+
+  .medium {
+    width: 300px;
+    height: 300px;
+    left: -200px;
+    bottom: -200px;
+  }
+
+  .large {
+    width: 500px;
+    height: 500px;
+    left: -300px;
+    bottom: -300px;
+  }
+
+  .xlarge {
+    width: 700px;
+    height: 700px;
+    left: -400px;
+    bottom: -400px;
+  }
+
+  .xxlarge {
+    width: 900px;
+    height: 900px;
+    left: -500px;
+    bottom: -500px;
+  }
+}
+
+@media only screen and (max-width: 491px) {
+  .small {
+    width: 50px;
+    height: 50px;
+    left: -100px;
+    bottom: -100px;
+  }
+
+  .medium {
+    width: 250px;
+    height: 250px;
+    left: -200px;
+    bottom: -200px;
+  }
+
+  .large {
+    width: 450px;
+    height: 450px;
+    left: -300px;
+    bottom: -300px;
+  }
+
+  .xlarge {
+    width: 650px;
+    height: 650px;
+    left: -400px;
+    bottom: -400px;
+  }
+
+  .xxlarge {
+    width: 800px;
+    height: 800px;
+    left: -500px;
+    bottom: -500px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .small {
+    width: 50px;
+    height: 50px;
+    left: -100px;
+    bottom: -100px;
+  }
+
+  .medium {
+    width: 250px;
+    height: 250px;
+    left: -200px;
+    bottom: -200px;
+  }
+
+  .large {
+    width: 450px;
+    height: 450px;
+    left: -300px;
+    bottom: -300px;
+  }
+
+  .xlarge {
+    width: 650px;
+    height: 650px;
+    left: -400px;
+    bottom: -400px;
+  }
+
+  .xxlarge {
+    width: 750px;
+    height: 750px;
+    left: -500px;
+    bottom: -500px;
+  }
+}

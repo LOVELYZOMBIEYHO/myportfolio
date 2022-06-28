@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+   
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <LInk href='css/NavBar.css' rel='stylesheet'>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    
+
+ 
+    <LInk href='css/custom3.css' rel='stylesheet'/>
+    <link href="css/popup.css" rel="stylesheet"/> 
+    <link href="css/footer.css" rel="stylesheet"/>
+    <link href="css/buttonlist.css" rel="stylesheet"/>
+    
+    <link rel="shortcut icon" href="./images/FAVICON.png"/>
+    <link rel="bookmark" href="./images/FAVICON.png"/>
+    <title>myPortfolio-Hoson_Yim</title>
+  </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a id="header-logo" href="./">
+            <img class='logo' src='images/logo_1.png' >
+          </a> 
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" id='navButton_1' href="index.html">HOME PAGE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id='navButton_2' href="myResume.html">MY SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id='navButton_3' href="websiteBuilt.html">MY ACHIEVEMENTS</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav sm-icons">
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/wing-ho-yim-555460150/" target="_blank"><i class="fab fa-linkedin-f"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/channel/UCOE5vcRxsdsQSBXK-OoqCQw" target="_blank"><i class="fab fa-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z"/></svg></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/LOVELYZOMBIEYHO" target="_blank"><i class="fab fa-youtube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+ <!-- Background animation -->
+ <section">
+  <div class="grid grid-cols-3 gap-4">
+    <div class="col-span-2">
+      <div class="ripple-background">
+      <div class="circle xxlarge shade1"></div>
+      <div class="circle xlarge shade2"></div>
+      <div class="circle large shade3"></div>
+      <div class="circle mediun shade4"></div>
+      <div class="circle small shade5"></div>
+    </div>
+  </div>
+  
+  </div>
+  
+</section>
+      <section class="emptyBox">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12"></div>
+          </div>
+        </div>
+       
+      </section>
+ 
+    
+      <div class="header">
+        <h1 class="titleH1">My Achievements</h1>
+      </div>
+      <div class="container-fluid  lineBox ">
+
+        <!-- -------------------------------------------------------------------- -->
+        <div class="row myRow">
+  
+            <div class="col-md-12 contentBox">
+              <div class="row">
+              <div class="col-md-6 imgBox">
+                <img src="./images/build-3965373_1920.jpg" class="img-fluid imgSetting" alt="">
+              </div>
+              <div class="col-md-6 textBox">
+                  <h3 class="textHeader">Digital Marketing</h3>
+                  <p class="textContent textContentRight">In regard to Hong Kong security industry, there are rarely companies to attempt to expand the market share through digital marketing .  However, I had a chance to build up a digital marketing team with my colleagues and meet with good results.</p>
+              </div>
+              
+             </div>
+            </div>
+        </div>
+  
+        <div class="row myRow">
+  
+          <div class="col-md-12 contentBox">
+            <div class="row">
+            <div class="col-md-6 order-md-2 order-sm-1 imgBox">
+              <img src="./images/maintenance-2422172_1920.jpg" class="img-fluid imgSetting2" alt="">
+            </div>
+            <div class="col-md-6 order-md-1 order-sm-2 textBox">
+              <h3 class="textHeader">Websites built</h3>
+              <p class="textContent textContentLeft websiteListContent">I built several websites with Html,CSS, JavaScript and Wordpress to train my web develope and SEO skills.  With the promote in some forum, a website activities have reached 1.42k on a day.</p>
+              <p class="textContent textContentLeft websiteListContent">website list:</p>
+
+              
+                  
+              <a class="btn-5" href="https://lovelyzombieyho.github.io/myportfolio/" target="_blank">myportfolio</a>
+              <a class="btn-5" href="https://lovelyzombies.com" target="_blank">lovelyzombies</a>
+              <a class="btn-5" href="https://hoson-digital-life.vercel.app/" target="_blank">Hoson-Digital-Life</a>
+              <a class="btn-5" href="https://emotionpray.com" target="_blank">情感兀</a>
+              
+              
+<!-- --------------------------------------------------- -->
+            </div>
+           
+           </div>
+          </div>
+      </div>
+    
+      <div class="row myRow">
+  
+        <div class="col-md-12 contentBox">
+          <div class="row">
+          <div class="col-md-6 imgBox">
+            <img src="./images/search-engine-optimization-4111000_1920.jpg" class="img-fluid imgSetting" alt="" style="object-position: bottom;">
+          </div>
+          <div class="col-md-6 textBox">
+              <h3 class="textHeader">SEO Ranking</h3>
+              <p class="textContent textContentLeft"> Apart from my job, I have tested my SEO skill.</p>
+
+
+
+              <!-- photo gallery ---------------------->
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class="gallery">
+                      
+                      <figure>
+                        
+                        <img src="./images/SEO1.JPG" alt="" class="popupAdjust"/>
+                        <figcaption class="contentAdjust">SEO-"保安招聘" <small>Second Page</small></figcaption>
+                        <p>SEO-"保安招聘" Second Page</p>
+                      </figure>
+                      
+                      <figure>
+                        
+                        <img src="./images/SEO2.JPG" alt="" class="popupAdjust"/>
+                        <figcaption class="contentAdjust">GoogleMyBussiness-"保安" <small>First Page</small></figcaption>
+                        <p>GoogleMyBussiness-"保安" First Page</p>
+                      </figure>
+                      <figure>
+                       
+                        <img src="./images/SEO3.JPG" alt="" class="popupAdjust"/>
+                        <figcaption class="contentAdjust">SEO-"2021年7月日本動畫新番" <small>First Page</small></figcaption>
+                        <p>SEO-"2021年7月日本動畫新番" First Page</p> 
+                      </figure>
+
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+                        <symbol id="close" viewBox="0 0 18 18">
+                          <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
+                            S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
+                            l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
+                            c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
+                            s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"/>
+                        </symbol>
+                      </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="gallery">
+                <figure>
+                  <img src="./images/SEO1.JPG" alt="" class="popupAdjust"/>
+                  <figcaption class="contentAdjust">SEO <small>First Page</small></figcaption>
+                </figure>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
+                  <symbol id="close" viewBox="0 0 18 18">
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
+                      S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
+                      l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
+                      c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
+                      s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"/>
+                  </symbol>
+                </svg> -->
+            
+
+                <!-- -------------------------- -->
+              <p class="textContent textContentRight"></p>
+          </div>
+          
+         </div>
+        </div>
+    </div>
+
+    <div class="row myRow">
+
+      <div class="col-md-12 contentBox">
+        <div class="row">
+        <div class="col-md-6 order-md-2 order-sm-1 imgBox">
+          <img src="./images/D-biz.jpg" class="img-fluid imgSetting2" alt="">
+        </div>
+        <div class="col-md-6 order-md-1 order-sm-2 textBox">
+          <h3 class="textHeader">Management - Youth Forum &DBiz</h3>
+          <p class="textContent textContentLeft">As a management trainee, I had an opportunity to convene a youth team which called “Youth Forum” and it is a team to deal with several projects trying digitization for company. One is the project of D-Biz
+            by HK Government.  As a result, we took the budget from D-Biz with 150K out of 300K.</p>
+        </div>
+       
+       </div>
+      </div>
+  </div>
+    
+    <!-- ------------------------------------------------------------------------------ -->
+    </div>
+    
+
+    
+
+      <!-- ------------------------------------------------------------------------------ -->
+  
+
+  
+  <footer>
+
+    <div class="container footer">
+      
+      <div class="row">
+        <div class="col">
+          <p>Contact
+            information —
+            Feel free to reach out to me any time through email.<br>  
+            
+            Email: yhoson1116@gmail.com
+            </p>
+        </div>
+        <div class="col">
+          <br>
+          <svg class="scrollToTop" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 16.666v-4.666l-7 4.666v-9.332l7 4.666v-4.666l7 4.666-7 4.666z"/></svg>
+        </div>
+        <div class="col footerBox3">
+          <div class="container">
+      
+            <div class="row">
+              <div class="col">
+            <a href="https://www.linkedin.com/in/wing-ho-yim-555460150/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="4" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="https://www.youtube.com/channel/UCOE5vcRxsdsQSBXK-OoqCQw" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="4" height="24" viewBox="0 0 24 24"><path d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z"/></svg></a>
+            <a href="https://github.com/LOVELYZOMBIEYHO" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="4" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                </div>
+                </div>
+                </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <br>
+  <br>
+  <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./js/custom3.js"></script>
+    <script src="./js/popupphoto.js"></script>
+</body>
+</html>
